@@ -59,3 +59,4 @@ def mark_attendance():
             return
 
     print("Member not found.")
+print("4. Mark Attendance")
