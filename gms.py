@@ -49,3 +49,13 @@ while True:
         break
     else:
         print("Invalid choice")
+def mark_attendance():
+    member_id = int(input("Enter member ID: "))
+
+    for member in members:
+        if member["id"] == member_id:
+            member["attendance"] = member.get("attendance", 0) + 1
+            print("Attendance marked successfully!")
+            return
+
+    print("Member not found.")
